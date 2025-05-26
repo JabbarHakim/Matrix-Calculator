@@ -13,6 +13,7 @@
 
     <h1 id="title">MATRIX CALCULATOR</h1>
     <h2>Made By Kelompok I</h2>
+    <button id="exchange-matrix" onclick="exchangeMatrices()">→ <br> ←</button>
 
     <!--  LOGO UNTIDAR  -->
     <a href="https://untidar.ac.id/">
@@ -73,6 +74,21 @@
                 <td><input type="text" readonly></td>
             </tr>
         </table>
+        <br>
+        <label id="text-fresult">Fraction Result</label>
+        <table id="fractionResultMatrix">
+            <tr>
+                <td><input type="text" readonly></td>
+                <td><input type="text" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" readonly></td>
+                <td><input type="text" readonly></td>
+            </tr>
+        </table>
+    </div>
+    <div id="buttons">
+       
     
         <button onclick="addMatrices()">A + B</button>
         <button onclick="subtractMatrices()">A - B</button>
@@ -95,6 +111,10 @@
         <button onclick="multiplyByScalar('matrixA')">Multiply Matrix A by Scalar</button>
         <button onclick="multiplyByScalar('matrixB')">Multiply Matrix B by Scalar</button>
         <input type="number" id="scalarInput" placeholder="Enter scalar value">
+        
+    
+        
+
     </div>
     
     <script src="script.js"></script>

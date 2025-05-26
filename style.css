@@ -25,9 +25,20 @@ img {
     position: absolute;
     top: 10px;
     left: 10px;
+}
 
-    
+.fraction-input {
+    width: 100px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
 
+.matrix-cell {
+    padding: 5px;
+}
+
+.fraction-input::placeholder {
+    font-size: 12px;
 }
 
 img:hover {
@@ -59,9 +70,16 @@ table {
 }
 
 #resultContainer {
+    display: absolute;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
     margin: 0 auto;
-    max-width: auto;
+    max-width: 30%;
     text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #resultMatrix {
@@ -72,6 +90,21 @@ table {
     justify-content: center;
 }
 
+
+#text-fresult {
+    font-size: 16px;
+    font-weight: 100;
+    font: bold 17px Arial, sans-serif;
+    color:#000000
+}
+
+#fractionResultMatrix {
+    margin: 0 auto;
+    border-collapse: collapse;
+    gap: 20%;
+    margin-bottom: 20px;
+    justify-content: center;
+}
 
 
 td {
@@ -110,4 +143,11 @@ button {
 
 button:hover {
     background-color: #696969;
+}
+
+#exchange-matrix {
+    position: relative;
+    top: 120px;
+
+
 }
