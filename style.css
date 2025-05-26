@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom , #f0f0f0, #02112e);
+    background-attachment: fixed;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    font-family: Verdana;
+    color: #000000;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: -25px;
+    color: #000000;
+    text-align: center;
+    position: relative;
+}
+
+
+img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    
+
+}
+
+img:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+h3 {
+    color: #313030;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#matrixContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    margin-bottom: 40px;
+}
+
+#matrixAContainer, #matrixBContainer {
+    flex: 1 1 0;   
+    min-width: auto;
+    max-width: auto;
+}
+
+#resultContainer {
+    margin: 0 auto;
+    max-width: auto;
+    text-align: center;
+}
+
+#resultMatrix {
+    margin: 0 auto;
+    border-collapse: collapse;
+    gap: 20%;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+
+
+td {
+    padding: 1px;
+    border: transparent;
+    
+}
+
+input[type="number"], input[type="text"] {
+    font-size: 16px;
+    text-align: center;
+    min-width: 40px;
+    width: auto;
+    max-width: auto;
+    box-sizing: content-box;
+    transition: width 0s;
+    border-radius: 6px;
+    padding: 2px 4px;
+    
+}
+
+input[type="number"]:focus, input[type="text"]:focus {
+    outline: transparent;
+}
+
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #1b1b1b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #696969;
+}

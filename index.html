@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logom.png">
+    
+</head>
+    
+<body>
+
+    <h1 id="title">MATRIX CALCULATOR</h1>
+    <h2>Made By Kelompok I</h2>
+
+    <!--  LOGO UNTIDAR  -->
+    <a href="https://untidar.ac.id/">
+    <img src="images/logountidar.png" alt="Website Untidar" 
+    alt="Website Untidar" 
+    height="40">
+    </a>
+
+    <h3 id="A">Matrix A</h3>
+    <div id="matrixAContainer">
+        <table id="matrixA">
+            <tr>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+            </tr>
+        </table>
+        <br>
+        <button onclick="addColumn('matrixA')">Add Column</button>
+        <button onclick="removeColumn('matrixA')">Remove Column</button>
+        <button onclick="addRow('matrixA')">Add Row</button>
+        <button onclick="removeRow('matrixA')">Remove Row</button>
+    
+    </div>
+
+    <h3 id="B">Matrix B</h3>
+    <div id="matrixBContainer">
+        <table id="matrixB">
+            <tr>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+            </tr>
+        </table>
+        <br>
+        <button onclick="addColumn('matrixB')">Add Column</button>
+        <button onclick="removeColumn('matrixB')">Remove Column</button>
+        <button onclick="addRow('matrixB')">Add Row</button>
+        <button onclick="removeRow('matrixB')">Remove Row</button>
+        
+    </div>
+
+    <h3>Result</h3>
+    <div id="resultContainer">
+        <table id="resultMatrix">
+            <tr>
+                <td><input type="text" readonly></td>
+                <td><input type="text" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" readonly></td>
+                <td><input type="text" readonly></td>
+            </tr>
+        </table>
+    
+        <button onclick="addMatrices()">A + B</button>
+        <button onclick="subtractMatrices()">A - B</button>
+        <button onclick="multiplyMatrices()">A x B</button>
+        <button onclick="transposeMatrix('matrixA')">Transpose Matrix A</button>
+        <button onclick="transposeMatrix('matrixB')">Transpose Matrix B</button>
+        <button onclick="determinantMatrix('matrixA')">Determinant Matrix A</button>
+        <button onclick="determinantMatrix('matrixB')">Determinant Matrix B</button>
+        <button onclick="transposeAddMatrices()">Transpose A + B</button>
+        <button onclick="transposeAddMatricesReverse()">Transpose B + A</button>
+        <button onclick="addTransposedMatrices()">Transpose A + Transpose B</button>
+        <button onclick="transposeSubtractMatrices()">Transpose A - B</button>
+        <button onclick="transposeSubtractMatricesReverse()">Transpose B - A</button>
+        <button onclick="subtractTransposedMatrices()">Transpose A - Transpose B</button>
+        <button onclick="transposeMultiplyMatrices()">Transpose A x B</button>
+        <button onclick="transposeMultiplyMatricesReverse()">Transpose B x A</button>
+        <button onclick="multiplyTransposedMatrices()">Transpose A x Transpose B</button>
+        <button onclick="inverseMatrix('matrixA')">Inverse Matrix A</button>
+        <button onclick="inverseMatrix('matrixB')">Inverse Matrix B</button>
+        <button onclick="multiplyByScalar('matrixA')">Multiply Matrix A by Scalar</button>
+        <button onclick="multiplyByScalar('matrixB')">Multiply Matrix B by Scalar</button>
+        <input type="number" id="scalarInput" placeholder="Enter scalar value">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
